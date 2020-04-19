@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       {
-        test: /\.sass$/,
+        test: /\.s[ac]ss$/,
         use: [
           'style-loader',
           'css-loader',
@@ -28,10 +28,10 @@ module.exports = {
         ]
       },
       {
-        test: /\.png$/,
+        test: /\.(jpe?g|png|svg|gif|ico|webp|eot|ttf|woff|woff2|pdf|mp4|webm)$/,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[ext]',
+          outputPath: 'assets',
         },
       }
     ]
