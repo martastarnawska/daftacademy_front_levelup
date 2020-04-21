@@ -1,4 +1,8 @@
 .exposition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__title {
     text-align: center;
     font-size: 2em;
