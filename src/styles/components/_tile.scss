@@ -1,0 +1,20 @@
+.tile {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__photo {
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  &__description {
+    padding: 5px 0;
+    line-height: 1.5;
+  }
+
+  &__price {
+    font-weight: bold;
+  }
+}
