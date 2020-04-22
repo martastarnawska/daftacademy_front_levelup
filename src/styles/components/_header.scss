@@ -1,5 +1,26 @@
 .header {
-  background-image: url("https://via.placeholder.com/1920x550");
+  position: relative;
+  background-image: url("https://via.placeholder.com/1460x550");
   background-position: center;
-  height: 550px;
+  height: 40vh;
+
+
+  &__toolbar {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start
+  }
+
+  &__navbar {
+    align-items: flex-start;
+    padding-right: 30px;
+  }
+
+  &__user-menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    justify-content: flex-end;
+  }
 }
+
