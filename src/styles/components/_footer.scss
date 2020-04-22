@@ -1,0 +1,32 @@
+.footer {
+  &__row {
+    border-top: 1px solid #d3d3d3;
+    padding: 15px 0;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+
+    @media (min-width: 992px) {
+      justify-content: center;
+    }
+  }
+
+  &__select {
+    border: none;
+  }
+
+  &__item {
+    padding-top: 10px;
+  }
+
+  &__payment {
+    display: flex;
+    @media (min-width: 992px) {
+      justify-content: flex-end;
+    }
+  }
+
+}
