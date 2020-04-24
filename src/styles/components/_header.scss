@@ -8,12 +8,20 @@
   &__toolbar {
     display: flex;
     justify-content: end;
-    align-items: flex-start
+    align-items: flex-start;
+
+    @media (max-width: 575px) {
+      padding: 15px 0;
+    }
   }
 
   &__navbar {
     align-items: flex-start;
     padding-right: 30px;
+
+    @media (max-width: 575px) {
+      padding-right: 15px;
+    }
   }
 
   &__user-menu {
@@ -21,6 +29,10 @@
     right: 20px;
     top: 10px;
     justify-content: flex-end;
+
+    @media (max-width: 575px) {
+      right: 0;
+    }
   }
 }
 
