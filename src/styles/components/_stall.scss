@@ -16,6 +16,11 @@
     left: 30px;
     top: 25px;
     line-height: 1.5;
+
+    &--bottom {
+      top: unset;
+      bottom: 25px;
+    }
   }
 
   &__title {
