@@ -143,7 +143,7 @@
     <div class="exposition__title">
       <h2> New Arrivals</h2>
     </div>
-    <div class="exposition__items-container container">
+    <div id="exposition" class="exposition__items-container container">
       <div class="row">
         <div class="tile col-6 col-md-3">
           <img class="tile__photo" src="https://via.placeholder.com/309x390" alt="">
@@ -203,9 +203,9 @@
             <p class="tile__price">$ 144</p>
           </div>
         </div>
-      </div>
+      </div>   
     </div>
-    <button class="button">All products</button>
+    <button id="showAll" class="button">All products</button>
   </section>
 
   <section class="section collections">
@@ -320,13 +320,17 @@
     </div>
 
     <div class="row footer__row">
-      <div class="col-12 col-lg-6 footer__item">©2019 Zonex All rights reserved</div>
+      <div class="col-12 col-lg-6 footer__item">©<span id="year"></span> Zonex All rights reserved</div>
       <div class="col-12 col-lg-6 footer__item footer__payment">
         <img src="../src/assets/payment.jpg" alt="payment">
       </div>
 
     </div>
   </footer>
+
+  <button id="scrollTop" class="scrollButton">
+    <img src="../src/assets/arrow-top.svg" alt="scroll top">
+  </button>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
