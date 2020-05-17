@@ -14,9 +14,9 @@ const createTile = (imageUrl, productName, productPrice) => {
   return tileMarkup;
 }
 
-const createExposition = async () => {
+const createExposition = async (category) => {
   const exposition = document.getElementById('basic-exposition');
-  const productsList = await getProducts();
+  const productsList = await getProducts(category);
 
   productsList.map(product => {
     const newTile = createTile(product.imageUrl, product.name, product.price.current.text)
