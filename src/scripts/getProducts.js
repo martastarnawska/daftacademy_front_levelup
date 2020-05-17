@@ -1,5 +1,5 @@
-const getProducts = async () => {
-  const products = await fetch("https://asos2.p.rapidapi.com/products/v2/list?country=US&currency=USD&sort=freshness&lang=en-US&sizeSchema=US&offset=0&categoryId=4209&limit=8&store=US", {
+const getProducts = async (categoryId) => {
+  const products = await fetch(`https://asos2.p.rapidapi.com/products/v2/list?country=US&currency=USD&sort=freshness&lang=en-US&sizeSchema=US&offset=0&categoryId=${categoryId}&limit=8&store=US`, {
     "method": "GET",
     "headers": {
       "x-rapidapi-host": "asos2.p.rapidapi.com",
